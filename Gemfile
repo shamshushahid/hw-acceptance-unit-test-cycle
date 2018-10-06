@@ -5,9 +5,10 @@ gem 'rails', '4.2.10'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
+gem 'pg', '~> 0.21'
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
-  gem 'pg', '~> 0.21'
+  #gem 'pg', '~> 0.21'
   gem 'sqlite3'
   gem 'byebug'
   gem 'database_cleaner', '1.4.1'
@@ -21,10 +22,10 @@ group :test do
   gem 'simplecov', :require => false
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
-  gem 'pg', '~> 0.21'
+  #gem 'pg', '~> 0.21'
 end
 group :production do
-  gem 'pg', '~> 0.21'
+  #gem 'pg', '~> 0.21'
 end
 
 # Gems used only for assets and not required
